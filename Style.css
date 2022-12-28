@@ -1,0 +1,57 @@
+
+    .circle {
+        top: 0px;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    background-color: green;
+    height: 35rem;
+    width: 35.2rem;
+    border-radius: 50%;
+    }
+    .cons {
+        position: absolute;
+    height: 35rem;
+    width: 35rem;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    letter-spacing: 10px;
+    font-size: 24px;
+    }
+    .cons::after,
+    .cons::before {
+        content: '';
+        position: absolute;
+        border: 17.5rem solid transparent;
+        border-radius: 50%;
+    border-bottom-color: green;
+    mix-blend-mode: difference;
+    animation: ani1 5s linear infinite ;
+    }
+    .cons::before {
+    animation: ani 5s linear infinite 2.5s;
+    }
+    .circle h1 {
+        top: 0rem;
+        left: 50rem;
+        font-size: 3.12rem;
+        letter-spacing: 1.1rem;
+    }
+    
+    @keyframes ani {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+    transform: rotate(360deg)
+    }
+    }
+    @keyframes ani1 {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+    transform: rotate(360deg)
+    }
+    }
+    
